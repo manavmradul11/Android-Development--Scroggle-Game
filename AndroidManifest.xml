@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.neu.madcourse.manusaxena">
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/favicon"
+        android:label="@string/app_name"
+        android:logo="@mipmap/favicon"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.NoActionBar">
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity android:name=".Assignment5.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Assignment5.Game" />
+        <activity android:name=".Assignment5.WordGame" />
+        <activity android:name=".Assignment5.GameActivity" />
+        <activity android:name=".Assignment8.wordgame.WordGameActivity">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_1" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Assignment8.TwoPlayerWordGame" />
+        <activity android:name=".Assignment8.TPWGActivity" />
+        <activity android:name=".Assignment8.realtimedatabase.RealtimeDatabaseActivity" />
+        <activity android:name=".Assignment8.fcm.ReceivedMessageActivity">
+            <intent-filter>
+                <action android:name="OPEN_ACTIVITY_2" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Assignment5.WordGameActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Assignment7.Communication" />
+        <activity android:name=".Assignment7.realtimedatabase.RealtimeDatabaseActivity" />
+        <activity android:name=".Assignment7.fcm.FCMActivity" />
+        <activity
+            android:name=".Assignment7.CommunicationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".Assignment5.AboutMe" />
+        <activity android:name=".Assignment5.TestDictionary" />
+        <activity android:name=".Assignment5.Acknowledgements" />
+        <activity android:name=".Project.manusaxena.TrickiestPart"></activity>
+    </application>
+
+</manifest>

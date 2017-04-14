@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_weight="0.3"
+        android:layout_height="0dp"
+        android:text="@string/name"
+        android:gravity="center"
+        android:id="@+id/textView"
+        android:textColor="#FFFFFF"
+        android:textSize="32sp"
+        android:background="#000000" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:text="@string/button_about"
+        android:onClick="aboutMe"
+        android:background="#f5f5ae"
+        android:textColor="#000000"
+        android:clickable="true"
+        android:padding="5dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar1"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_generate_error"
+            android:onClick="generateError"
+            android:background="#f55e4e"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start_ticTacToe"
+            android:onClick="ticTacToe"
+            android:background="#75de49"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" />
+        <Button
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="@string/button_start_dictionary"
+            android:onClick="dictionary"
+            android:background="#cdde49"
+            android:layout_gravity="center_vertical"
+            android:clickable="true" />
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:text="@string/button_word_game"
+        android:onClick="wordGame"
+        android:textColor="#FFFFFF"
+        android:background="#019be8"
+        android:textSize="20sp"
+        android:clickable="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:text="@string/button_multiplayer_word_game"
+        android:onClick="communication"
+        android:textColor="#FFFFFF"
+        android:background="#e89301"
+        android:textSize="20sp"
+        android:clickable="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:text="Two Player Word Game"
+        android:onClick="twoPlayerWordGame"
+        android:textColor="#FFFFFF"
+        android:background="@color/accent_material_light"
+        android:textSize="20sp"
+        android:clickable="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:text="Trickiest Part"
+        android:onClick="trickiestPart"
+        android:textColor="#FFFFFF"
+        android:background="@color/Yellow"
+        android:textSize="20sp"
+        android:clickable="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_weight="0.2"
+        android:layout_height="0dp"
+        android:text="@string/button_quit"
+        android:onClick="quit"
+        android:textColor="#FFFFFF"
+        android:background="#e80101"
+        android:textSize="20sp"
+        android:clickable="true" />
+
+</LinearLayout>

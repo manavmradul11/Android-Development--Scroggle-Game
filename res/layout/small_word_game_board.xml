@@ -1,0 +1,36 @@
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband4 for more book information.
+-->
+<GridLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="wrap_content"
+   android:layout_height="wrap_content"
+   android:background="@drawable/tile_background"
+   android:padding="@dimen/small_board_padding"
+   tools:context=".Assignment5.WordGameActivity">
+
+   <ImageButton android:id="@+id/small1_word_game" style="@style/TileButton"
+                android:layout_column="0" android:layout_row="0"/>
+   <ImageButton android:id="@+id/small2_word_game" style="@style/TileButton"
+                android:layout_column="1" android:layout_row="0"/>
+   <ImageButton android:id="@+id/small3_word_game" style="@style/TileButton"
+                android:layout_column="2" android:layout_row="0"/>
+   <ImageButton android:id="@+id/small4_word_game" style="@style/TileButton"
+                android:layout_column="0" android:layout_row="1"/>
+   <ImageButton android:id="@+id/small5_word_game" style="@style/TileButton"
+                android:layout_column="1" android:layout_row="1"/>
+   <ImageButton android:id="@+id/small6_word_game" style="@style/TileButton"
+                android:layout_column="2" android:layout_row="1"/>
+   <ImageButton android:id="@+id/small7_word_game" style="@style/TileButton"
+                android:layout_column="0" android:layout_row="2"/>
+   <ImageButton android:id="@+id/small8_word_game" style="@style/TileButton"
+                android:layout_column="1" android:layout_row="2"/>
+   <ImageButton android:id="@+id/small9_word_game" style="@style/TileButton"
+                android:layout_column="2" android:layout_row="2"/>
+</GridLayout>

@@ -1,0 +1,45 @@
+<!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband4 for more book information.
+-->
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   xmlns:tools="http://schemas.android.com/tools"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent"
+   tools:context=".Assignment5.WordGame">
+
+
+   <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="center"
+      android:orientation="vertical">
+
+      <fragment
+         android:id="@+id/fragment_word_game"
+         class="edu.neu.madcourse.manusaxena.Assignment5.WordGameFragment"
+         android:layout_width="match_parent"
+          android:layout_gravity="center"
+          android:layout_weight="8"
+         android:layout_height="0sp"
+         tools:layout="@layout/fragment_word_game"/>
+      <!-- Control fragment goes here... -->
+
+      <fragment
+         android:id="@+id/fragment_controls_word_game"
+         class="edu.neu.madcourse.manusaxena.Assignment5.WordGameControlFragment"
+         android:layout_width="match_parent"
+          android:layout_weight="1"
+         android:layout_height="0sp"
+         tools:layout="@layout/fragment_control_word_game"/>
+
+   </LinearLayout>
+
+   <include layout="@layout/thinking_word_game"/>
+
+</FrameLayout>

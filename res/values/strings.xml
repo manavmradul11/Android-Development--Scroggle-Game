@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ ! Excerpted from "Hello, Android",
+ ! published by The Pragmatic Bookshelf.
+ ! Copyrights apply to this code. It may not be used to create training material, 
+ ! courses, books, articles, and the like. Contact us if you are in doubt.
+ ! We make no guarantees that this code is fit for any purpose. 
+ ! Visit http://www.pragmaticprogrammer.com/titles/eband4 for more book information.
+-->
+<resources>
+
+
+    <string name="app_name">NUMAD17S-ManuSaxena</string>
+    <string name="quickstart_message">The Log Token button logs the Registration token to the log. The Send Notification Button sends the notification to the client device.</string>
+    <string name="send_notification">Send Notification</string>
+    <string name="log_token">Log Token</string>
+
+
+    <string name="msg_subscribed">Subscribed to news topic</string>
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="go_to_fcm_demo">FCM Demo</string>
+    <string name="go_to_realtime_database_demo">Realtime Database Demo</string>
+
+    <string name="username">User Name</string>
+    <string name="score">Score</string>
+
+    <string name="add5">Add 5</string>
+    <string name="name">Manu Saxena</string>
+    <string name="edit_message">Enter a message</string>
+    <string name="button_send">Send</string>
+    <string name="label_dictionary">Test Dictionary</string>
+    <string name="button_generate_error">Generate Error</string>
+    <string name="button_start_ticTacToe">Tic Tac Toe</string>
+    <string name="button_start_dictionary">Test Dictionary</string>
+    <string name="button_return_to_menu">Return to Menu</string>
+    <string name="button_clear">Clear</string>
+    <string name="button_acknowledgements">Acknowledgements</string>
+    <string name="button_about">About</string>
+    <string name="button_quit">Quit</string>
+    <string name="button_word_game">Word Game</string>
+    <string name="button_multiplayer_word_game">Communication</string>
+    <string name="long_app_name">Ultimate Tic Tac Toe</string>
+    <string name="long_word_game_app_name">Scroggle</string>
+    <string name="action_settings">Settings</string>
+    <string name="restart_label">Restart</string>
+    <string name="main_menu_label">Main Menu</string>
+    <string name="declare_winner">%1$s is the winner</string>
+    <string name="continue_label">Continue</string>
+    <string name="new_game_label">New Game</string>
+    <string name="about_title">About Ultimate Tic Tac Toe</string>
+    <string name="about_label">About</string>
+    <string name="ack_label">Acknowledgement</string>
+    <string name="ok_label">OK</string>
+    <string name="text_acknowledgements">I designed my own launcher icon as well as alphabet drawables for assignment 5.Free non-copyright sounds in res/raw folder are obtained from http://soundbible.com\n\nThere is no external sourcecode or links which I used in this assignment
+    \n\n
+\n I have used the sample code provided by TA\'s on piazza as a base for the  Communication interface. But the internal logic is modified to suits my requirements.
+Except for strategies discussed by Prof. Intille,I sought no help from anyone for this assignment</string>
+    <string name="text_strategy">"Strategy used:
+First encoded each word from the word list and converted to a long where (a-z) corresponded to number (1-26).
+Then Put each encoded word into an arrayList of longs and sorted the arrayList using Arrays.sort(arrayList).
+Then finally Binary searched the textbox word(after encoding this as well) and using Arrays.binarySearch()</string>
+    <string name="about_text">\
+Scroggle is a mix and twist of famous games-word scrambles, Boggle and Scrabble..\n\
+\n\
+In phase-1 of the game , you will select letters to form the longest dictionary word in each 3x3 small board .Your aim is to cover all
+the small boards with maximum length word formed in each.You have to do this before the 90 second timer goes
+out for each phase. Then upon entering phase-2 you have to form words using all the letters you selected in phase 1.
+The more letters you select in phase-1 the more words you can form in phase-2\n\n
+scoring:\n
+
+1. Scrabble scoring for each letter\n
+2. Each letter forming a valid word will add point to the total score\n
+3. 2X points for 9 letter words formed in the small board during Phase-1\n
+4. 2X total score when game switches to phase-2\n
+5. 1/5 points of total score is deducted when a wrong word is formed
+
+</string>
+
+
+     <string name="about_test_code">\
+1.Initially, You and the other player have 4 small boards each. Middle small board is locked.
+  your aim is to form words with maximum length, using the letters in each of our boards.
+2.Greater the word length is in each board, higher is the score.
+3.You both will alternate turns and have 25 seconds to form a word in any one of your respective boards.
+4.One who forms a 9-letter word first, unlocks the middle board, and gets a chance to form one more word and maximize their score.
+5.Game finishes when both of you finish forming words in each of your boards.
+6.The one with highest score wins the game.
+
+</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+</resources>
